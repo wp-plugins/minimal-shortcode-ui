@@ -18,7 +18,7 @@ namespace Sui;
  * - Everything after the string 'Shortcode' needs to be written in CamelCase
  *
  * For example naming my child Shortcode class 'SuperShortcodeThisDoesSomething' will result
- * in a shortcode tag name of 'this_does_something'. Make sure you overwrite the $_tagName
+ * in a shortcode tag name of 'this_does_something'. Make sure you overwrite the $_tagNamePrefix
  * property with a prefix relevant to your theme/plugin. Setting this prefix to e.g. 'sui'
  * will result in the shortcode tag name of 'sui_this_does_something'.
  *
