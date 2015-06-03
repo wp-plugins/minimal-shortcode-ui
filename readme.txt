@@ -12,7 +12,9 @@ Allows theme/plugin developers to make their custom shortcodes easily accessible
 
 == Description ==
 
-The minimum code required that allows the user configure and add an shortcode to the page contents using a popup form that is accessible through the TinyMCE content editor. Suitable for developers that wish to provide their users with an easy way of adding your custom shortcodes. The plugin provides an abstract shortcode class that can be extended and registered into the shortcode factory. Which will result in the shortcodes showing up in the dropdown menu.
+The minimum code required that allows the user configure and add an shortcode to the page contents using a popup form that is accessible through the TinyMCE content editor. 
+
+Suitable for developers that wish to provide their users with an easy way of adding your custom shortcodes. The plugin provides an abstract shortcode class that can be extended and registered into the shortcode factory. Which will result in the shortcodes showing up in the dropdown menu.
 
 == Installation ==
 
