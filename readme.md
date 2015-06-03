@@ -2,7 +2,8 @@ Minimal Shortcode UI
 ======================
 The minimum code required that allows the user configure and add an shortcode to the page contents using a popup form that is accessible through the TinyMCE content editor. Suitable for developers that wish to provide their users with an easy way of adding your custom shortcodes. The plugin provides an abstract shortcode class that can be extended and registered into the shortcode factory. Which will result in the shortcodes showing up in the dropdown menu.
 
-![Screenshot](/screenshot.jpg?raw=true "Screenshot of the shortcode dialog")
+![Screenshot](/screenshot-1.jpg?raw=true "Screenshot of the new button in the content editor")
+![Screenshot](/screenshot-2.jpg?raw=true "Screenshot of the shortcode dialog")
 
 ----------
 
