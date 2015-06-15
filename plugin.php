@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Minimal Shortcode UI
  * Description: The minimum code required that allows the user configure and add an shortcode to the page contents using a popup form that is accessible through the TinyMCE content editor. Suitable for developers that wish to provide their users with an easy way of adding your custom shortcodes. The plugin provides an abstract shortcode class that can be extended and registered into the shortcode factory. Which will result in the shortcodes showing up in the dropdown menu.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 4.2
  * Author: Dutchwise
  * Author URI: http://www.dutchwise.nl/
@@ -125,6 +125,10 @@ function sui_wp_admin_enqueue_scripts() {
 		'underscore', 'jquery', 'jquery-ui-core',
 		'jquery-ui-dialog', 'media-upload'
 	));
+	
+	// load required admin styles
+	wp_enqueue_style('wp-jquery-ui-dialog');
+	wp_enqueue_style('media-views');
 	
 	// inserts the shortcode register, dialog templates and i18n strings
 	wp_localize_script('sui-modal-dialog', 'sui', array(

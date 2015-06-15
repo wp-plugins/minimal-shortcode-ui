@@ -15,6 +15,10 @@ Tested up to **WordPress 4.2.2**
 ## Installation
 [Download ZIP](https://github.com/Maxdw/minimal-shortcode-ui/archive/master.zip) -> WordPress -> Plugins -> Add New -> Upload Plugin -> *(select zip file)* -> Install Now
 
+## Changelog
+1.0.1 Fixed jQuery UI styles not being loaded
+1.0.0 Initial release
+
 ## License
 The MIT License (MIT)
 

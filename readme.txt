@@ -48,5 +48,8 @@ Make sure the plugin is active and have a look at example.php in the plugin's ro
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Fixes jQuery UI styles not being loaded for the dialog
+
+= 1.0.0 =
 * Initial version
