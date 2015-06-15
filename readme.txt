@@ -4,7 +4,7 @@ Donate link: http://dutchwise.nl/
 Tags: shortcode,shortcodes,ui,developers,multilingual
 Requires at least: 4.2
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: MIT
 License URI: http://www.opensource.org/licenses/mit-license.php
 
