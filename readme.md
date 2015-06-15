@@ -8,7 +8,7 @@ The minimum code required that allows the user configure and add an shortcode to
 ----------
 
 ## Details
-Version **1.0.0**  
+Version **1.0.1**  
 Requires at least **WordPress 4.2**  
 Tested up to **WordPress 4.2.2**
 
