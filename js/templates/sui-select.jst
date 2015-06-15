@@ -1,0 +1,7 @@
+<select style="width:100%;margin-bottom:14px" name="shortcode">
+	<option value=""><%= i18n['label-shortcode'] %></option>
+	<% _.each(data, function(value, index) { %>
+		<option value="<%= index %>"><%= index %></option>
+    <% }); %>
+</select>
+<hr />

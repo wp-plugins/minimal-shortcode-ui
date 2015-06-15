@@ -1,0 +1,36 @@
+<% if(data.description) { %>
+	<p><%= data.description %></p>
+<% } %>
+
+<% _.each(data.schema, function(schema, field) { %>
+	<div style="margin-bottom: 14px">
+		<% if(schema.type == 'text') { %>
+            <label style="line-height:200%" for="sui-<%= schema.name %>"><%= schema.label %></label><br />
+            <input style="width:100%" id="sui-<%= schema.name %>" type="text" value="<%= schema.value %>" name="<%= schema.name %>" />
+        <% } else if(schema.type == 'textarea') { %>
+            <label style="line-height:200%" for="sui-<%= schema.name %>"><%= schema.label %></label><br />
+            <textarea style="width:100%" id="sui-<%= schema.name %>" name="<%= schema.name %>"><%= schema.value %></textarea>
+        <% } else if(schema.type == 'select' && schema.extra && schema.extra.options) { %>
+            <label style="line-height:200%" for="sui-<%= schema.name %>"><%= schema.label %></label><br />
+            <select style="width:100%" id="sui-<%= schema.name %>" name="<%= schema.name %>">
+                <% _.each(schema.extra.options, function(value, index) { %>
+                    <option value="<%= index %>"><%= value %></option>
+                <% }); %>
+            </select>
+        <% } else if(schema.type == 'checkbox') { %>
+            <label style="margin-right:7px;margin-top:7px" for="sui-<%= schema.name %>"><%= schema.label %></label>
+            <input id="sui-<%= schema.name %>" type="checkbox" value="<%= schema.value %>" name="<%= schema.name %>" />
+        <% } else if(schema.type == 'image') { %>
+        	<span style="line-height:200%"><%= schema.label %></span><br />
+            <a href="#" class="image button"><%= i18n['button-image'] %></a>
+            <input type="hidden" value="<%= schema.value %>" name="<%= schema.name %>" />
+        <% } %>
+    </div>
+<% }); %>
+
+<% if(data.enclosed) { %>
+	<div style="margin-bottom: 14px">
+    	<label style="line-height:200%" for="sui-content"><%= i18n['label-content'] %></label><br />
+		<textarea style="width:100%" id="sui-content" name="_content"></textarea>
+    </div>
+<% } %>
